@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="169.0" y="101.0">stromnetz.Benzingenerator</node>
+    <node x="0.0" y="101.0">stromnetz.Solarzelle</node>
+    <node x="207.0" y="315.0">stromnetz.Stromnetzinspektor</node>
+    <node x="0.0" y="315.0">stromnetz.Verbraucher</node>
+    <node x="0.0" y="197.0">stromnetz.Stromnetz</node>
+    <node x="85.75" y="0.0">stromnetz.Erzeuger</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="stromnetz.Solarzelle" target="stromnetz.Erzeuger">
+      <point x="0.0" y="-25.5" />
+      <point x="74.5" y="76.0" />
+      <point x="123.5" y="76.0" />
+      <point x="-37.75" y="25.5" />
+    </edge>
+    <edge source="stromnetz.Benzingenerator" target="stromnetz.Erzeuger">
+      <point x="0.0" y="-25.5" />
+      <point x="248.0" y="76.0" />
+      <point x="199.0" y="76.0" />
+      <point x="37.75" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="179.0" y="183.0" />
+  <SelectedNodes>
+    <node>stromnetz.Benzingenerator</node>
+    <node>stromnetz.Solarzelle</node>
+    <node>stromnetz.Stromnetzinspektor</node>
+    <node>stromnetz.Verbraucher</node>
+    <node>stromnetz.Stromnetz</node>
+    <node>stromnetz.Erzeuger</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

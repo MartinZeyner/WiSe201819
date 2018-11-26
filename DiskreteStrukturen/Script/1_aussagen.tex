@@ -1,0 +1,79 @@
+%%
+%% Author: Abgie
+%% 16.10.2018
+%%
+
+% Preamble
+\documentclass[diskretestrukturen.tex]{subfiles}
+
+% Document
+\begin{document}
+  \section{Aussagen}
+  \begin{definition}[Aussage]
+    Eine Aussage ist eine Repr\"asentation eines Satzes, der entweder wahr (1) oder falsdch (0) ist.
+  \end{definition}
+
+  \begin{description}
+    \begin{itemize}
+      \item nich die Wahrheitsbestimmung von Basis-Aussagen
+      \item Formalisierung von Aussagenverk\"upfungen
+      \item Bewertung von Aussagenverk\"upfungen basierend auf Wahrheitswerden der Teilaussagen
+      \item Schlussregeln
+    \end{itemize}
+    \item \textbf{Notation (Junktoren):}
+    \begin{itemize}
+      \item Negation: $\neg A$ (nicht $A$)
+      \item Konjunktion: $A \bigwedge B$ ($A$ und $B$)
+      \item Disjunktion: $A \bigvee B$ ($A$ oder $B$)
+      \item Implikation:  $A \rightarrow B$ (wenn $A$, dann $B$)
+      \item ACHTUNG: Implikation ist genau dann falsch, wenn $A$ gilt und die Folgerung $B$ nicht.
+    \end{itemize}
+    \item \textbf{Syntax und Semantik}
+    \begin{definition}[Atome und Formeln]
+      Aussagenlogische Atome sind primitive Aussagen wie $A$ oder $B$.
+
+      Aussagenlogische Formeln sind Aussagen inklusive Verkn\"upfungen.
+
+
+      W\"ahrend die Wahrheit eines Atoms abh\"angig von der fachlichen Aussage ist, ist die Wahrheit einer Formel nur von der Wahrheit
+      ihrer Atome abh\"angig.
+
+      Als Beweismethode wird die Wahrheitswertetabelle genutzt.
+    \end{definition}
+    \item \textbf{Wahrheitswertetabelle:}
+    \begin{itemize}
+      \item Beweisschema f\"ur komplexe Aussagen
+      \item tabellarische Auflistung aller M\"oglichkeiten
+    \end{itemize}
+    \item \textbf{\"Aquivalenz:}
+    \begin{definition}[\"Aquivalenz]
+      Zwei Aussagen $A$ und $B$ sind \"aquivalent ($A \leftrightarrow B$), genau dann wenn deren Wahrheitswerte uebereinstimmen.
+    \end{definition}
+
+
+    \"Aquivalente Formeln:
+    \begin{tabular}{r|rr}
+      \hline
+      \"aquivalente Formeln & \"aquivalente Formeln && Bezeichnung  \\
+      \hline
+      $A \bigwedge B$ && $B \bigwedge A$ && Kommutativit\"at von $\bigwedge$  \\
+      $A \bigvee B$ && $B \bigvee A$ && Kommutativit\"at von $\bigvee$  \\
+
+      $(A \bigwedge B) \bigwedge C$ && $A \bigwedge (B \bigwedge C)$ && Assoziativit\"at von $\bigwedge$  \\
+      $(A \bigvee B) \bigvee C$ && $A \bigvee (B \bigvee C)$ && Assoziativit\"at von $\bigvee$  \\
+
+      $A \bigwedge (B \bigvee C)$ && $(A \bigwedge B) \bigvee (A \bigwedge C)$ && Assoziativit\"at von $\bigwedge$  \\
+      $A \bigvee (B \bigwedge C)$ && $(A \bigvee B) \bigwedge (A \bigvee C)$ && Assoziativit\"at von $\bigvee$  \\
+
+      $A \bigwedge A$ && $A$ && Idempotenz von $\bigwedge$  \\
+      $A \bigvee A$ && $A$ && Idempotenz von $\bigvee$  \\
+
+      $\neg\neg A$ && $A$ && Involution von $\neg$  \\
+
+      $\neg(A \bigwedge B)$ && $(\neg A) \bigvee (\neg B)$ && DeMorgan-Gesetz f\"ur $\bigwedge$  \\
+      $\neg(A \bigvee B)$ && $(\neg A) \bigwedge (\neg B)$ && DeMorgan-Gesetz f\"ur $\bigvee$  \\
+      \hline
+    \end{tabular}
+  \end{description}
+
+\end{document}

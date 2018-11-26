@@ -1,0 +1,84 @@
+Abgaben:
+  Menge: 56
+  Oktober:
+    [
+      26.10. (Analysis),
+      28.10. (MuP),
+      29.10. (DBS),
+
+      30.10. (DS),
+      31.10. (ADS)
+    ]
+  November:
+    [
+      01.11. (AuS),
+      02.11. (Analysis),
+      05.11. (BKS),
+      05.11. (Wahr),
+      09.11. (Analysis),
+      11.11. (MuP),
+      12.11. (DBS),
+      13.11. (DS),
+      14.11. (ADS),
+      15.11. (AuS),
+      16.11. (Analysis),
+      19.11. (BKS),
+      19.11. (Wahr),
+      23.11. (Analysis),
+      25.11. (MuP),
+      26.11. (DBS),
+      27.11. (DS),
+      28.11. (ADS),6
+      29.11. (AuS),
+      30.11. (Analysis)
+    ]
+  Dezember:
+    [
+      03.12. (BKS),
+      03.12. (Wahr),
+      07.12. (Analysis),
+      09.12. (MuP),
+      10.12. (DBS),
+      11.12. (DS),
+      12.12. (ADS),
+      13.12. (AuS),
+      14.12. (Analysis),
+      17.12. (Wahr),
+      21.12. (Analysis),
+      23.12. (MuP),
+      24.12. (DBS)
+    ]
+  Januar:
+    [
+      06.01. (MuP),
+      07.01. (BKS),
+      08.01. (DS),
+      10.01. (AuS),
+      15.01. (Wahr),
+      16.01. (ADS),
+      18.01. (Analysis),
+      20.01. (BKS),
+      20.01. (MuP),
+      21.01. (BKS),
+      21.01. (DBS),
+      22.01. (DS),
+      24.01. (AuS),
+      25.01. (Analysis),
+      28.01. (Wahr)
+    ]
+  Februar:
+    [
+      01.02. (Analysis),
+      05.02. (DS),
+      11.02. (Wahr)
+    ]
+
+Ergebnisse:
+  Modellierung und Programmierung:
+    Gesamtpuntzahl: +3 / 0 (100%)
+    Abgabeart: online in Moodle2
+    Voraussetzung: ja
+    Aufgaben:
+      Aufgabe 0:
+        Abgabefrist: Sonntag, den 28.10.2018 23:55 Uhr
+        Ergebnis: 3 Zusatzpunkte (100%)

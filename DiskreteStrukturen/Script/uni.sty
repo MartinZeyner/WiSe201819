@@ -1,0 +1,75 @@
+% Seitenspiegel aus package a4wide, muss zuerst stehen
+\ifcase \@ptsize
+% mods for 10 pt
+\oddsidemargin 0.25 in
+\evensidemargin 0.25 in
+\marginparwidth 0.75 in
+\textwidth 5.875 in
+\or % mods for 11 pt
+\oddsidemargin 0.125 in
+\evensidemargin 0.125 in
+\marginparwidth 0.75 in
+\textwidth 6.125 in
+\or % mods for 12 pt
+\oddsidemargin 0 in
+\evensidemargin 0 in
+\marginparwidth 0.75 in
+\textwidth 6.375 true in
+\fi
+
+\usepackage[a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm,bindingoffset=5mm]{geometry}
+
+\usepackage{amsfonts}
+\usepackage[T1]{fontenc}
+\usepackage{subfiles}
+
+% Deutsche Trennhilfe
+\usepackage[ngerman]{babel}
+
+% Umlaute in utf8-Kodierung
+\usepackage[utf8]{inputenc}
+% Mathematische Zeichen der AMS
+\usepackage{amsmath,amssymb,bbm,url}
+
+
+% Umgebungen
+\usepackage{framed} % or, "mdframed"
+\usepackage[framed]{ntheorem}
+\newframedtheorem{definition}{Theorem}
+
+% Ungebung für einen Beweis
+\newenvironment{proof}{\emph{Beweis:}\ }{\qquad$\square$\par}
+
+%Bilder ermöglichen
+\usepackage{graphicx}
+
+%Hyperlinks
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=blue]{hyperref}
+
+% Kopfzeile auf jeder Seite gestalten
+\usepackage{fancyhdr}
+\headheight14pt
+\lhead{Bachelor Informatik}
+\cfoot{\textrm{\thepage}}
+\pagestyle{fancy}
+
+% Einzug und Abstand von Absätzen
+\parindent0cm
+\parskip3pt
+
+% Verschiedene häufig auftretende mathematische Notationen
+% Zahlbereiche
+\def\N{\mathbbm{N}}
+\def\Z{\mathbbm{Z}}
+\def\Q{\mathbbm{Q}}
+\def\R{\mathbbm{R}}
+\def\br#1{\left(#1\right)}    % brackets
+\def\sbr#1{\left[#1\right]}   % square brackets
+\def\cbr#1{\left\{#1\right\}} % curly brackets
+\def\abs#1{\left|#1\right|} % abs. Betrag
+
+\newcommand{\Anmerkung}[1]{
+\begin{quote}
+  \emph{Anmerkung:} #1
+\end{quote}
+}

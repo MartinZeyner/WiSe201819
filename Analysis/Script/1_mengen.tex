@@ -1,0 +1,78 @@
+%%
+%% Author: Abgie
+%% 16.10.2018
+%%
+
+% Preamble
+\documentclass[analysis.tex]{subfiles}
+
+% Document
+\begin{document}
+  \section{Mengen}
+  \begin{definition}[Mengen]
+    Unter einer Menge verstehen wir hier einfach die Zusammenfassung gewisser mathematischer Objekte zu einem neuen mathematischen Objekt.
+  \end{definition}
+
+  \begin{description}
+    \item \textbf{Grundlagen von Mengen:}
+    \begin{itemize}
+      \item Elemente von Mengen:
+      \begin{itemize}
+        \item Ausgangsobjekte der Menge (Ausgangsobjekte k\"onnen auch Mengen sein)
+        \item Schreibweise: $x \in A$ oder $x \notin A$ (Objekt $x$ ist (nicht) Element einer Menge $A$)
+      \end{itemize}
+      \item Gleichheit von Mengen:
+      \begin{itemize}
+              \item Jedes Element der Menge $A$ ist auch ein Element der Menge $B$.
+              \item Jedes Element der Menge $B$ ist auch ein Element der Menge $A$.
+        \item F\"ur alle Mengen $A$ und $B$ gilt : $A = B \Leftrightarrow (A \subseteq B$ und $B \subseteq A)$
+      \end{itemize}
+      \item Mengeneigenschaften:
+      \begin{itemize}
+        \item Alle $x$ mit der Eigenschaft $\varepsilon$: $\{x : x$ hat die Eigenschaft $\varepsilon\}$
+        \item F\"ur eine Menge aller $x$ mit der Eigenschaft $\varepsilon$: $\{x \in M : x$ hat die Eigenschaft $\varepsilon\}$
+        \item F\"ur eine Menge mit der Eigenschaft $\varepsilon$: $\{x : x \in M$ und $: x$ hat die Eigenschaft $\varepsilon\}$
+      \end{itemize}
+    \end{itemize}
+    \item \textbf{Teilmengen:}
+    \begin{definition}[Teilmengen]
+      Sind $A$ und $B$ zwei Mengen, so hei\ss{}t $A$ eine Teilmenge von $B$ (in Zeichen: $A \subseteq B$), falls jedes Element von $A$ auch
+      ein Element von $B$ ist.
+    \end{definition}
+    \item \textbf{leere Mengen:}
+    \begin{definition}[leere Mengen]
+      Die leere Menge ist diejenige Menge, welche keine Elemente enthalt. Sie wird mit $\varnothing$ bezeichnet.
+    \end{definition}
+    \item \textbf{Einermengen:}
+    \begin{definition}[Einermengen]
+      Fur jedes mathematische Objekt $a$ bezeichne $\{a\}$ diejenige Menge, die $a$ als einziges Element enth\"alt. $\{a\}$ hei\ss{}t die
+      Einermenge mit Element $a$.
+    \end{definition}
+    \item \textbf{Mengenoperationen:}
+    \begin{itemize}
+      \item Differenz: $A \setminus B := \{x : x \in A$ und $x \notin B\}$ (Differenzmenge = $A \setminus B$ )
+      \item Durchschnitt: $A \cap B := \{x : x \in A$ und $x \in B\}$ (disjunkt = $A \cap B = \varnothing$)
+      \item Vereinigung: $A \cup B := \{x : x \in A$ oder $x \in B\}$
+      \item Weitere Eingenschaften:
+      \begin{itemize}
+        \item $(A \cup B) \cup C = A \cup (B \cup C)$
+        \item $(A \cap B) \cap C = A \cap (B \cap C)$
+        \item $A \cup B = B \cup A$
+        \item $A \cap B = B \cap A$
+        \item $(A \cup B) \cap C = (A \cap C) \cup (B \cap C)$
+        \item $(A \cap B) \cup C = (A \cup C) \cap (B \cup C)$
+      \end{itemize}
+    \end{itemize}
+    \item \textbf{geordnete Paare:}
+    \begin{definition}[geordnete Paare]
+      F\"ur zwei mathematische Objekte $a$ und $b$ definieren wir das geordnete Paar $(a, b)$ durch $(a, b) := \{\{a\}, \{a, b\}\}$.
+      F\"ur alle mathematischen Objekte $a, b, c, d$ gilt: $(a, b) = (c, d) \Leftrightarrow a = c$ und $b = d$.
+    \end{definition}
+    \item \textbf{kartesisches Produkt von Mengen:}
+    \begin{definition}[kartesisches Produkt]
+      F\"ur zwei Mengen $A$ und $B$ ist ihr kartesisches Produkt definiert durch: $A \times B  := \{(a, b) : a \in A, b \in B\}$. Also:
+      $A \times B := \{x :$ es existieren ein $a \in A$ und ein $b \in B$ mit $x = (a, b)\}$.
+    \end{definition}
+  \end{description}
+
+\end{document}
